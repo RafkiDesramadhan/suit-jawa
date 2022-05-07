@@ -404,30 +404,32 @@ footer p {
   }
 }
 
-@media screen and (min-width: 375px) {
-  .area-player ul {
-    padding-left: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .area-player ul {
-    padding-left: 195px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 275px) and (min-width: 768px) {
   .container {
-    width: 50%;
+    width: 60%;
   }
 
   .area-player ul {
-    padding-left: 145px;
+    padding-left: 68px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1366px) {
+  .container {
+    width: 40%;
+  }
+
+  .area-player ul {
+    padding-left: 80px;
   }
 
   .area-komputer img,
   .area-player ul li img {
     width: 90px;
     height: 90px;
+  }
+
+  .teks .tooltip-teks {
+    width: 90px;
   }
 }
