@@ -119,12 +119,14 @@ pilihan.forEach((pil) => {
     }
 
     const idKesempatan = document.querySelector("#kesempatan");
-    idKesempatan.innerHTML = kesempatan;
-
     const idPlayer = document.querySelector("#score-player");
     const idComputer = document.querySelector("#score-computer");
-    idPlayer.innerHTML = scorePlayer;
-    idComputer.innerHTML = scoreComputer;
+
+    setTimeout(() => {
+      idKesempatan.innerHTML = kesempatan;
+      idPlayer.innerHTML = scorePlayer;
+      idComputer.innerHTML = scoreComputer;
+    }, 1000);
 
     if (scorePlayer > 3) {
       scorePlayer = 0;
