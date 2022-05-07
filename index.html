@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
+    />
+    <title>Suit Jawa</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Suwit Jawa</h1>
+        <p>
+          Silahkan memilih di antara pilihan berikut :
+          <span>Gajah, Orang, Semut.</span>
+        </p>
+        <p>
+          Jika kalah, anda memiliki <span id="kesempatan">3</span
+          ><span class="bold">x</span> kesempatan
+        </p>
+        <div class="area-score">
+          <span id="score-player">0</span> : <span id="score-computer">0</span>
+        </div>
+        <button id="btnModeDark" type="button">Mode Gelap</button>
+        <button id="btnModeLight" type="button">Mode Terang</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="area-komputer">
+        <img src="img/question.jpg" class="img-komputer" />
+      </div>
+      <div class="info"></div>
+      <div class="area-player">
+        <ul>
+          <li>
+            <div class="teks">
+              <img src="img/gajah.png" class="gajah" />
+              <span class="tooltip-teks">Gajah</span>
+            </div>
+          </li>
+          <li>
+            <div class="teks">
+              <img src="img/orang.png" class="orang" />
+              <div class="tooltip-teks">Orang</div>
+            </div>
+          </li>
+          <li>
+            <div class="teks">
+              <img src="img/semut.png" class="semut" />
+              <div class="tooltip-teks">Semut</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="instruction">
+      <div class="container-fluid">
+        <hr />
+        <div class="game-instruction">
+          <h2>Instruksi Permainan :</h2>
+          <div class="flex">
+            <img src="img/semut.png" alt="semut" class="img-instruction" />
+            <p>Jari kelingking menandakan semut.</p>
+          </div>
+          <div class="flex">
+            <img src="img/orang.png" alt="orang" class="img-instruction" />
+            <p>Jari kelingking menandakan orang.</p>
+          </div>
+          <div class="flex">
+            <img src="img/gajah.png" alt="gajah" class="img-instruction" />
+            <p>Jari kelingking menandakan gajah.</p>
+          </div>
+        </div>
+        <div class="game-rule">
+          <h2>Aturan Permainan :</h2>
+          <ol type="1">
+            <li>
+              <p>
+                Player memilih gambar (Gajah, Orang, Semut), sedangkan computer
+                akan mengacak gambar.
+              </p>
+            </li>
+            <li>
+              <p>
+                Player memilih gambar pada area biru, sedangkan Computer akan
+                mengacak gambar pada area merah.
+              </p>
+            </li>
+            <li>
+              <p>
+                Jika Player dan Computer seri maka tidak ada penambahan score.
+                Masing-masing score akan bertambah jika salah satu ada yang
+                menang.
+              </p>
+            </li>
+            <li>
+              <p>
+                Batas maksimal score adalah 4. Jika score Player memiliki angka
+                4, maka Player yang menang. Jika score Computer memiliki angka
+                4, maka Computer yang menang.
+              </p>
+            </li>
+            <li>
+              <p>Score akan di reset ketika mencapai score maksimal.</p>
+            </li>
+            <li>
+              <p>Selamat Bermain :D</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Powered By &copy; <span class="bold">Rafki Desramadhan</span>, Helped
+        <span class="bold">Shandika Galih</span>
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
