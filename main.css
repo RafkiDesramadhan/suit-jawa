@@ -321,6 +321,8 @@ footer p {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* tooltip */
@@ -346,7 +348,7 @@ footer p {
 
 @media screen and (min-width: 275px) {
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
   }
@@ -363,16 +365,18 @@ footer p {
   .area-player {
     width: 100%;
     height: 190px;
+    margin-bottom: 10px;
   }
 
   .area-player ul {
     padding-top: 65px;
+    padding-left: 11px;
   }
 
   .area-komputer img,
   .area-player ul li img {
-    width: 80px;
-    height: 80px;
+    width: 69px;
+    height: 69px;
   }
 
   #btnModeLight {
@@ -386,7 +390,7 @@ footer p {
   }
   .teks .tooltip-teks {
     visibility: hidden;
-    width: 80px;
+    width: 69px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -397,5 +401,33 @@ footer p {
   }
   .teks:hover .tooltip-teks {
     visibility: visible;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .area-player ul {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .area-player ul {
+    padding-left: 195px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 50%;
+  }
+
+  .area-player ul {
+    padding-left: 145px;
+  }
+
+  .area-komputer img,
+  .area-player ul li img {
+    width: 90px;
+    height: 90px;
   }
 }
